@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123
+    url: jdbc:mysql://47.100.187.237:3306/cache
+  redis:
+    host: 47.100.187.237
+
+##\u5F00\u542Fmybatis\u9A7C\u5CF0\u547D\u540D
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+##\u65E5\u5FD7
+logging:
+  level:
+    com.lzj.cache: debug
+
+
+debug: true
+
+    ##run sql
+#    schema:
+#      - classpath:sql/department.sql
+#      - classpath:sql/employee.sql
+#    initialization-mode: always
